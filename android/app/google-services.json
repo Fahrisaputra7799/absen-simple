@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "515873503451",
+    "project_id": "absen-simple",
+    "storage_bucket": "absen-simple.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515873503451:android:9ac4fe3f704e4da90474fe",
+        "android_client_info": {
+          "package_name": "com.example.absen_simple"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBM2KXTEcVoi1nqBTDionJie9hSY0YejsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
