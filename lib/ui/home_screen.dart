@@ -1,3 +1,6 @@
+import 'package:absen_simple/ui/absent_screen.dart';
+import 'package:absen_simple/ui/attend_screen.dart';
+import 'package:absen_simple/ui/attendance_history_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -34,6 +37,16 @@ class HomeScreen extends StatelessWidget {
                 Expanded(
                   // efect when click
                   child: InkWell(
+                    highlightColor: Colors.transparent,
+                    splashColor: Colors.transparent,
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => AbsentScreen(),
+                        ),
+                      );
+                    },
                     child: const Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -55,6 +68,14 @@ class HomeScreen extends StatelessWidget {
                 ),
                 Expanded(
                   child: InkWell(
+                    highlightColor: Colors.transparent,
+                    splashColor: Colors.transparent,
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const AttendScreen()));
+                    },
                     child: const Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -76,6 +97,16 @@ class HomeScreen extends StatelessWidget {
                 ),
                 Expanded(
                   child: InkWell(
+                    highlightColor: Colors.transparent,
+                    splashColor: Colors.transparent,
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const AttendanceHistoryScreen(),
+                        ),
+                      );
+                    },
                     child: const Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
