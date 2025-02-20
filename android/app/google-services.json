@@ -7,6 +7,25 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:515873503451:android:fbc9f64876353ed60474fe",
+        "android_client_info": {
+          "package_name": "com.attendance"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBM2KXTEcVoi1nqBTDionJie9hSY0YejsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:515873503451:android:9ac4fe3f704e4da90474fe",
         "android_client_info": {
           "package_name": "com.example.absen_simple"

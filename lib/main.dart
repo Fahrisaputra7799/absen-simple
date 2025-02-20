@@ -10,9 +10,9 @@ Future<void> main() async {
           // Add your own Firebase project configuration from google-services.json
           apiKey: 'AIzaSyBM2KXTEcVoi1nqBTDionJie9hSY0YejsQ', // api_key
           appId:
-              '1:515873503451:android:9ac4fe3f704e4da90474fe', // mobilesdk_app_id
-          messagingSenderId: '243811762198', // project_number
-          projectId: 'idn-boarding-school-solo' // project_id
+              '1:515873503451:android:fbc9f64876353ed60474fe', // mobilesdk_app_id
+          messagingSenderId: '515873503451', // project_number
+          projectId: 'absen-simple' // project_id
           ),
     );
     // Firebase connection success

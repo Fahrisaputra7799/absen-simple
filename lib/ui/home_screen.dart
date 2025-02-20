@@ -1,6 +1,7 @@
 import 'package:absen_simple/ui/absent_screen.dart';
 import 'package:absen_simple/ui/attend_screen.dart';
 import 'package:absen_simple/ui/attendance_history_screen.dart';
+import 'package:absen_simple/ui/student_date.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -117,6 +118,33 @@ class HomeScreen extends StatelessWidget {
                         ),
                         Text(
                           "Attendance History",
+                          style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: InkWell(
+                    highlightColor: Colors.transparent,
+                    splashColor: Colors.transparent,
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const StudentDate(),
+                        ),
+                      );
+                    },
+                    child: const Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Icons.water_damage_outlined, size: 100,),
+                        Text(
+                          "Student Date",
                           style: TextStyle(
                             fontSize: 14,
                             fontWeight: FontWeight.bold,
