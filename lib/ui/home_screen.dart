@@ -1,6 +1,7 @@
 import 'package:absen_simple/ui/absent_screen.dart';
 import 'package:absen_simple/ui/attend_screen.dart';
 import 'package:absen_simple/ui/attendance_history_screen.dart';
+import 'package:absen_simple/ui/date_student.dart';
 import 'package:absen_simple/ui/student_date.dart';
 import 'package:flutter/material.dart';
 
@@ -135,14 +136,17 @@ class HomeScreen extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const StudentDate(),
+                          builder: (context) => const DateStudent(),
                         ),
                       );
                     },
                     child: const Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(Icons.water_damage_outlined, size: 100,),
+                        Icon(
+                          Icons.data_thresholding,
+                          size: 100,
+                        ),
                         Text(
                           "Student Date",
                           style: TextStyle(
@@ -177,6 +181,17 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => StudentDate(),
+            ),
+          );
+        },
+        child: Icon(Icons.person_pin_rounded),
       ),
     );
   }
