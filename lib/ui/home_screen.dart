@@ -45,7 +45,7 @@ class HomeScreen extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => AbsentScreen(),
+                          builder: (context) => AttendScreen(),
                         ),
                       );
                     },
@@ -76,7 +76,7 @@ class HomeScreen extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const AttendScreen()));
+                              builder: (context) => const AbsentScreen()));
                     },
                     child: const Column(
                       mainAxisAlignment: MainAxisAlignment.center,
